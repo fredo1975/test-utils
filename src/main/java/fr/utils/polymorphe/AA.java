@@ -1,8 +1,8 @@
-package fr.bluechipit.polymorph;
+package fr.utils.polymorphe;
 
-class A {
+class AA {
 	int i;
-	public A(){
+	public AA(){
 		System.out.println("constructor A");
 	}
 	int f() {
@@ -15,9 +15,9 @@ class A {
 		return g();
 	}
 }
-class B extends A {
+class BB extends AA {
 	int i = 2;
-	public B(){
+	public BB(){
 		System.out.println("constructor B");
 	}
 	int f() {
@@ -33,12 +33,12 @@ class B extends A {
 
 class test {
 	public static void main(String[] args) {
-		B b = new B();
+		BB b = new BB();
 		System.out.println(b.i);
 		System.out.println(b.f());
 		System.out.println(b.g());
 		System.out.println(b.h());
-		A a = b;
+		AA a = b;
 		System.out.println(a.i);
 		System.out.println(a.f());
 		System.out.println(a.g());
