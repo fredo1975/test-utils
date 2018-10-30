@@ -10,5 +10,6 @@ public class C extends B {
 		a.x(c);
 		a.y(c);
 		a.z(c);
+		c.x(c);
 	}
 }

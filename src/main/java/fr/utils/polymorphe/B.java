@@ -13,6 +13,7 @@ public class B extends A{
 		a.x(b);
 		a.y(b);
 		a.z(b);
+		b.x(b);
 	}
 
 }
