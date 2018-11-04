@@ -1,4 +1,4 @@
-package fr.utils.polymorphe;
+package fr.bluechipit.polymorphe;
 
 public class C extends B {
 	void x(C c){System.out.println("C.X()");}

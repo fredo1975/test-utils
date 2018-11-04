@@ -1,4 +1,4 @@
-package fr.utils.polymorphe;
+package fr.bluechipit.polymorphe;
 
 public class B extends A{
 
