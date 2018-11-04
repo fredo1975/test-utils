@@ -4,7 +4,6 @@ import java.util.Map;
 
 
 public class Fibonacci {
-
 	static Map<Integer,Long> map = new HashMap<Integer, Long>();
 	public static Long Fibo(Integer n){
 		if(n<=0){
@@ -24,7 +23,5 @@ public class Fibonacci {
 		for(int i=0;i<=100;i++){
 			System.out.println(Fibonacci.Fibo(new Integer(i)));
 		}
-		
 	}
-
 }
