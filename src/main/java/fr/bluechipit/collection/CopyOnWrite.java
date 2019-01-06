@@ -7,8 +7,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import org.assertj.core.util.Arrays;
-
 public class CopyOnWrite {
 
 	public static void main(String[] args) throws InterruptedException {
