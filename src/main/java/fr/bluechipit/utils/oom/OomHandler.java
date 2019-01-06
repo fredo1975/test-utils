@@ -14,8 +14,7 @@ public class OomHandler {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		List<String> ll = new ArrayList<String>();
-		List<Integer> integerList = new ArrayList<Integer>();
+		List<Integer> integerList = new ArrayList<>();
 		
 		Map<Integer,Integer> integerMap = new HashMap<Integer,Integer>();
 		int i=0;
