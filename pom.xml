@@ -8,8 +8,6 @@
 	<name>test-utils</name>
 	<url>http://maven.apache.org</url>
 
-
-
 	<properties>
 		<spring.version>4.3.17.RELEASE</spring.version>
 		<junit.version>4.12</junit.version>
