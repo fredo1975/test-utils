@@ -99,11 +99,15 @@
 				<version>1.0-m5.1</version>
 				<configuration>
 					<username>fredo1975</username>
-        			<password>github1975</password>
-					<pushFeatures>true</pushFeatures>
-					<pushHotfixes>true</pushHotfixes>
+					<password>github1975</password>
 					<pushReleases>true</pushReleases>
-					<enableSshAgent>true</enableSshAgent>
+					<keepBranch>false</keepBranch>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<noTag>true</noTag>
+					<allowUntracked>true</allowUntracked>
+					<pullDevelop>true</pullDevelop>
+					<pullMaster>true</pullMaster>
+					<allowSnapshots>true</allowSnapshots>
 					<flowInitContext>
 						<masterBranchName>master_tmp</masterBranchName>
 						<developBranchName>development_tmp</developBranchName>
