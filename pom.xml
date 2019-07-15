@@ -107,8 +107,8 @@
 						<supportBranchPrefix>support/</supportBranchPrefix>
 						<versionTagPrefix></versionTagPrefix>
 						<origin>origin</origin>
-						<releaseRebase>true</releaseRebase>
 					</gitFlowConfig>
+					<releaseRebase>true</releaseRebase>
 				</configuration>
 			</plugin>
 		</plugins>
