@@ -10,13 +10,13 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class CopyOnWrite {
 
 	public static void main(String[] args) throws InterruptedException {
-		Integer[] tab = new Integer[] {5000, 3000, 1000, 8000};
+		Integer[] tab = new Integer[] {5000, 3000, 1000, 8000, 1500000};
 		CopyOnWriteArrayList<Integer> numbers = new CopyOnWriteArrayList<>(tab);
 		Iterator<Integer> iterator = numbers.iterator();
 		numbers.add(10);
 		List<Integer> result = new LinkedList<>();
 		iterator.forEachRemaining(result::add);
-		assertThat(result).containsOnly(5000, 3000, 1000, 8000);
+		assertThat(result).containsOnly(5000, 3000, 1000, 8000, 1500000);
 		CopyOnWrite c = new CopyOnWrite();
 		Runnable r1 = c.new RunnableWithCopy(numbers);
 		Runnable r2 = c.new RunnableWithCopy(numbers);
