@@ -31,7 +31,7 @@ public class Java8Tester {
 		GreetingService greetService1 = message -> System.out.println("Hello " + message);
 
 		// with parenthesis
-		GreetingService greetService2 = (message) -> System.out.println("Hello " + message);
+		GreetingService greetService2 = (message) -> System.out.println("Hi " + message);
 
 		greetService1.sayMessage("Mahesh");
 		greetService2.sayMessage("Suresh");

@@ -36,12 +36,12 @@ class test {
 		BB b = new BB();
 		System.out.println(b.i);
 		System.out.println(b.f());
-		System.out.println(b.g());
+		System.out.println(BB.g());
 		System.out.println(b.h());
 		AA a = b;
 		System.out.println(a.i);
 		System.out.println(a.f());
-		System.out.println(a.g());
+		System.out.println(AA.g());
 		System.out.println(a.h());
 	}
 }
