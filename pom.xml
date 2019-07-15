@@ -1,11 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>fr.utils</groupId>
 	<artifactId>test-utils</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.5</version>
+	<version>1.1.0</version>
 	<name>test-utils</name>
 	<url>http://maven.apache.org</url>
 
@@ -17,7 +15,10 @@
 		<junit.platform.version>1.1.0</junit.platform.version>
 		<logback.version>1.2.3</logback.version>
 	</properties>
-
+	<scm>
+		<connection>scm:git:https://github.com/fredo1975/test-utils.git</connection>
+		<developerConnection>scm:git:git:https://github.com/fredo1975/test-utils.git</developerConnection>
+	</scm>
 	<dependencies>
 		<dependency>
 			<groupId>commons-collections</groupId>
@@ -94,22 +95,42 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>com.amashchenko.maven.plugin</groupId>
-				<artifactId>gitflow-maven-plugin</artifactId>
-				<version>1.12.0</version>
+				<groupId>external.atlassian.jgitflow</groupId>
+				<artifactId>jgitflow-maven-plugin</artifactId>
+				<version>1.0-m5.1</version>
 				<configuration>
-					<gitFlowConfig>
-						<productionBranch>master_tmp</productionBranch>
-						<developmentBranch>develop_tmp</developmentBranch>
-						<featureBranchPrefix>feature/</featureBranchPrefix>
-						<releaseBranchPrefix>release/</releaseBranchPrefix>
-						<hotfixBranchPrefix>hotfix/</hotfixBranchPrefix>
-						<supportBranchPrefix>support/</supportBranchPrefix>
-						<versionTagPrefix></versionTagPrefix>
-						<origin>origin</origin>
-					</gitFlowConfig>
+					<username>fredo1975</username>
+					<password>github1975</password>
+					<pushReleases>true</pushReleases>
+					<keepBranch>false</keepBranch>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+					<noTag>true</noTag>
+					<allowUntracked>true</allowUntracked>
+					<pullDevelop>true</pullDevelop>
+					<pullMaster>true</pullMaster>
+					<allowSnapshots>true</allowSnapshots>
+					<flowInitContext>
+						<masterBranchName>master_tmp</masterBranchName>
+						<developBranchName>develop_tmp</developBranchName>
+						<featureBranchPrefix>feature-</featureBranchPrefix>
+						<releaseBranchPrefix>release-</releaseBranchPrefix>
+						<hotfixBranchPrefix>hotfix-</hotfixBranchPrefix>
+						<versionTagPrefix>${project.artifactId}-</versionTagPrefix>
+					</flowInitContext>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Releases</name>
+			<url>http://192.168.1.105:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Snapshot</name>
+			<url>http://192.168.1.105:8081/repository/maven-snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
