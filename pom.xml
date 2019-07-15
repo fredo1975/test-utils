@@ -3,7 +3,7 @@
 	<groupId>fr.utils</groupId>
 	<artifactId>test-utils</artifactId>
 	<packaging>jar</packaging>
-	<version>1.2.3</version>
+	<version>1.2.4-SNAPSHOT</version>
 	<name>test-utils</name>
 	<url>http://maven.apache.org</url>
 
