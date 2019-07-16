@@ -14,10 +14,12 @@ public class SetTest {
 		set1.add("querty");
 		set1.add("titi");
 		set1.add("tata");
+		set1.add("tutu");
 		System.out.println("first="+set1.first());
 		System.out.println("last="+set1.last());
 		System.out.println("headSet="+set1.headSet("titi").toString());
 		System.out.println("tailSet="+set1.tailSet("querty").toString());
+		System.out.println("tailSet="+set1.tailSet("tutu").toString());
 		
 		for(String s : set1){
 			System.out.println(s);
