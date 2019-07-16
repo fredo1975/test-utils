@@ -26,7 +26,7 @@ pipeline {
 		 		steps {
 		 			withMaven(mavenSettingsConfig: '64b2f66f-fa43-4c22-86bc-47645fa2ff4e') {
             			sh '''
-            				mvn clean install jgitflow:release-start
+            				mvn clean install jgitflow:release-start jgitflow:release-finish
             			'''
 		    		}
 		    	}
