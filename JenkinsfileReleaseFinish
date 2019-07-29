@@ -23,11 +23,9 @@ pipeline {
         }
         stage ('Build') {
 		 		steps {
-		 			withMaven(mavenSettingsConfig: 'MyMavenSettings') {
-            			sh '''
-            				mvn jgitflow:release-finish
-            			'''
-		    		}
+		 			sh '''
+            			mvn jgitflow:release-finish
+            		'''
 		    	}
         }
     }
