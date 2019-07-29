@@ -3,7 +3,7 @@
 	<groupId>fr.utils</groupId>
 	<artifactId>test-utils</artifactId>
 	<packaging>jar</packaging>
-	<version>1.5.5</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>test-utils</name>
 	<url>http://maven.apache.org</url>
 
@@ -109,6 +109,7 @@
 					<pullDevelop>true</pullDevelop>
 					<pullMaster>true</pullMaster>
 					<allowSnapshots>true</allowSnapshots>
+					<noDeploy>true</noDeploy>
 					<flowInitContext>
 						<masterBranchName>master_tmp</masterBranchName>
 						<developBranchName>develop_tmp</developBranchName>
