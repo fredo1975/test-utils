@@ -25,7 +25,7 @@ pipeline {
         stage ('Build') {
 		 		steps {
 		 			sh '''
-            			mvn jgitflow:release-start
+            			mvn jgitflow:release-start -Dmaven.javadoc.skip=true
             		'''
 		    	}
         }
