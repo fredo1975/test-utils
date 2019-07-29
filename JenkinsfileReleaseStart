@@ -24,7 +24,7 @@ pipeline {
 
         stage ('Build') {
 		 		steps {
-		 			withMaven(mavenSettingsConfig: 'MyGlobalSettings') {
+		 			withMaven(mavenSettingsConfig: 'MySettings') {
             			sh '''
             				mvn jgitflow:release-start
             			'''
