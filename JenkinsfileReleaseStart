@@ -24,9 +24,11 @@ pipeline {
 
         stage ('Build') {
 		 		steps {
-		 			sh '''
-            			mvn jgitflow:release-start -Dmaven.javadoc.skip=true
-            		'''
+		 			withMaven(mavenSettingsConfig: 'MyMavenSettings') {
+			 			sh '''
+	            			mvn jgitflow:release-start -Dmaven.javadoc.skip=true
+	            		'''
+            		}
 		    	}
         }
     }
