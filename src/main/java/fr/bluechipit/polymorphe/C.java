@@ -7,7 +7,7 @@ public class C extends B {
 	public static void main(String[] args) {
 		A a = new C();
 		C c = new C();
-		a.x(c);
+		A.x(c);
 		a.y(c);
 		a.z(c);
 		c.x(c);
