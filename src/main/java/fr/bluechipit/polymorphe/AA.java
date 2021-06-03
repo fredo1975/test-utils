@@ -34,14 +34,14 @@ class BB extends AA {
 class test {
 	public static void main(String[] args) {
 		BB b = new BB();
-		System.out.println(b.i);
-		System.out.println(b.f());
-		System.out.println(BB.g());
-		System.out.println(b.h());
+		System.out.println("b.i="+b.i);
+		System.out.println("b.f()="+b.f());
+		System.out.println("BB.g()="+BB.g());
+		System.out.println("b.h()="+b.h());
 		AA a = b;
-		System.out.println(a.i);
-		System.out.println(a.f());
-		System.out.println(AA.g());
-		System.out.println(a.h());
+		System.out.println("a.i="+a.i);
+		System.out.println("a.f()="+a.f());
+		System.out.println("AA.g()="+AA.g());
+		System.out.println("a.h()="+a.h());
 	}
 }
