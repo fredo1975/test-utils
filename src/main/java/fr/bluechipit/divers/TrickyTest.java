@@ -38,4 +38,8 @@ public class TrickyTest {
         }
         return res;
     }
+	
+	public void feat4() {
+		System.out.println("feat4");
+	}
 }
