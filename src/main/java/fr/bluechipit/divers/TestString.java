@@ -38,4 +38,7 @@ public class TestString {
 	}
 	
 
+	public void test11() {
+		System.out.println("t1");
+	}
 }
