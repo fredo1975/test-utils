@@ -21,4 +21,8 @@ public class TestString {
 		System.out.println(str4 == str3 ? "str4==str3" : "str4!=str3");
 		System.out.println("str3.hashCode()=" + str3.hashCode() + " str4.hashCode()=" + str4.hashCode());
 	}
+	
+	public void test1() {
+		System.out.println("t1");
+	}
 }
