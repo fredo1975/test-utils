@@ -22,11 +22,15 @@ public class TestString {
 		System.out.println("str3.hashCode()=" + str3.hashCode() + " str4.hashCode()=" + str4.hashCode());
 	}
 	
+
 	public void test1() {
 		System.out.println("t1");
 	}
 	
 	public void test2() {
+		System.out.println("t1");
+	}
+	public void test3() {
 		System.out.println("t1");
 	}
 }
