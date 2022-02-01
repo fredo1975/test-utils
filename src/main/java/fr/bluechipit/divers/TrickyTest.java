@@ -70,4 +70,8 @@ public class TrickyTest {
 	public void feat3() {
 		System.out.println("feat3");
 	}
+	
+	public void newfeat1() {
+		System.out.println("newfeat1");
+	}
 }
