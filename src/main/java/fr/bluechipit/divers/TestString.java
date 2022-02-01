@@ -25,4 +25,8 @@ public class TestString {
 	public void test3() {
 		System.out.println("t1");
 	}
+	
+	public void test4() {
+		System.out.println("t1");
+	}
 }
