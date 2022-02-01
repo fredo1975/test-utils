@@ -39,6 +39,7 @@ public class TrickyTest {
         return res;
     }
 	
+
 	public void feat1() {
 		System.out.println("feat1");
 	}
@@ -49,5 +50,8 @@ public class TrickyTest {
 	
 	public void feat3() {
 		System.out.println("feat3");
+	}
+	public void feat4() {
+		System.out.println("feat4");
 	}
 }
