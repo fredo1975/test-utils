@@ -64,6 +64,10 @@ public class TrickyTest {
 	}
 	
 	public void feat2() {
-		System.out.println("feat");
+		System.out.println("feat2");
+	}
+	
+	public void feat3() {
+		System.out.println("feat3");
 	}
 }
