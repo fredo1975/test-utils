@@ -37,13 +37,15 @@ public class TestString {
 		System.out.println("t1");
 	}
 	
-
 	
 	public void test5() {
 		System.out.println("t1");
 	}
 	
 	public void test6() {
+		System.out.println("t1");
+	}
+	public void test11() {
 		System.out.println("t1");
 	}
 }
