@@ -65,5 +65,12 @@ public class TrickyTest {
 	public void feat3() {
 		System.out.println("feat3");
 	}
+<<<<<<< Upstream, based on origin/master
 
+=======
+	
+	public void newfeat1() {
+		System.out.println("newfeat1");
+	}
+>>>>>>> eb7f202 newfeat1
 }
