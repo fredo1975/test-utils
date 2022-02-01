@@ -38,44 +38,4 @@ public class TrickyTest {
         }
         return res;
     }
-	
-
-	public void feat1() {
-		System.out.println("feat1");
-	}
-	
-	public void feat2() {
-		System.out.println("feat2");
-	}
-	
-	public void feat3() {
-		System.out.println("feat3");
-	}
-	public void feat4() {
-		System.out.println("feat4");
-	}
-	
-	public void feat5() {
-		System.out.println("feat5");
-	}
-	
-	public void feat1() {
-		System.out.println("feat1");
-	}
-	
-	public void feat2() {
-		System.out.println("feat2");
-	}
-	
-	public void feat3() {
-		System.out.println("feat3");
-	}
-	
-	public void newfeat1() {
-		System.out.println("newfeat1");
-	}
-	
-	public void newfeat2() {
-		System.out.println("newfeat2");
-	}
 }
