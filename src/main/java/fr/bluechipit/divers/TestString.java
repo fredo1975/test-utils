@@ -37,4 +37,8 @@ public class TestString {
 	public void test4() {
 		System.out.println("t1");
 	}
+	
+	public void test1() {
+		System.out.println("t1");
+	}
 }
