@@ -48,4 +48,8 @@ public class TestString {
 	public void test11() {
 		System.out.println("t1");
 	}
+	
+	public void test22() {
+		System.out.println("t1");
+	}
 }
