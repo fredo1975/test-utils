@@ -50,4 +50,8 @@ public class TestString {
 >>>>>>> 9b6aa7e t11
 		System.out.println("t1");
 	}
+	
+	public void test22() {
+		System.out.println("t1");
+	}
 }
