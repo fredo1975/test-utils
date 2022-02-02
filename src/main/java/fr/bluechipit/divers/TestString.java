@@ -38,20 +38,8 @@ public class TestString {
 	}
 	
 
-<<<<<<< Upstream, based on branch 'feat2' of ssh://git@github.com/fredo1975/test-utils.git
 	
 	public void test5() {
-		System.out.println("t1");
-	}
-	
-	public void test6() {
-=======
-	public void test11() {
->>>>>>> 9b6aa7e t11
-		System.out.println("t1");
-	}
-	
-	public void test22() {
 		System.out.println("t1");
 	}
 	
