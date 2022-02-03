@@ -31,4 +31,7 @@ public class Oom {
 		
 	}
 
+	public void feat4() {
+		
+	}
 }
