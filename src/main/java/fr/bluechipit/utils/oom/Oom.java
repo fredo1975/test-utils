@@ -28,20 +28,4 @@ public class Oom {
 	}
 
 
-	public void feat5() {
-		
-	}
-
-	public void feat6() {
-		
-	}
-	
-
-	public void feat7() {
-		
-	}
-
-	public void feat8() {
-		
-	}
 }
