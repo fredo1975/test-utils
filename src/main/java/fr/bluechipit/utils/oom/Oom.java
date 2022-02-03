@@ -30,6 +30,9 @@ public class Oom {
 	public void feat1() {
 		
 	}
+	public void feat3() {
+		
+	}
 
 
 	public void feat2() {
