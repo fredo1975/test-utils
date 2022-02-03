@@ -31,10 +31,16 @@ public class Oom {
 		
 	}
 	
-	public void feat3() {
+	
+	public void feat1() {
 		
 	}
-	public void feat1() {
+
+	public void feat2() {
+		
+	}
+	
+	public void feat3() {
 		
 	}
 
@@ -45,4 +51,6 @@ public class Oom {
 	public void feat4() {
 		
 	}
+	
+	
 }
