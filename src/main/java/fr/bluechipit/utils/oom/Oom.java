@@ -27,4 +27,12 @@ public class Oom {
 		}
 	}
 
+
+	public void feat5() {
+		
+	}
+
+	public void feat6() {
+		
+	}
 }
