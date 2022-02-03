@@ -26,5 +26,13 @@ public class Oom {
 			logger.info("integerMap.size()="+integerMap.size());
 		}
 	}
+	
+	public void feat1() {
+		
+	}
 
+	public void feat2() {
+		
+	}
+	
 }
