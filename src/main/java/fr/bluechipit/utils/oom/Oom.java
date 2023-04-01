@@ -15,7 +15,6 @@ public class Oom {
 	 */
 	public static void main(String[] args) {
 		List<Integer> integerList = new ArrayList<>();
-
 		Map<Integer,Integer> integerMap = new HashMap<Integer,Integer>();
 		int i=0;
 		while(true){
