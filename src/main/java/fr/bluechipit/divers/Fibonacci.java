@@ -21,6 +21,6 @@ public class Fibonacci {
 	}
 	public static void main(String[] args) {
 		// 0=0 1=1 2=1 3=2 4=3 5=5 6=8 7=13	8=21 9=34 10=55 11=89 12=144 13=233	14=377 15=610 16=987	...
-		System.out.println(Fibonacci.Fibo(new Integer(16)));
+		System.out.println(Fibonacci.Fibo(Integer.valueOf(16)));
 	}
 }

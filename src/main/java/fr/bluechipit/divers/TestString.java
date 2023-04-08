@@ -20,8 +20,23 @@ public class TestString {
 		System.out.println(str4.equals(str3) ? "str4.equals(str3)" : "!str4.equals(str3)");
 		System.out.println(str4 == str3 ? "str4==str3" : "str4!=str3");
 		System.out.println("str3.hashCode()=" + str3.hashCode() + " str4.hashCode()=" + str4.hashCode());
+		
+		changeString(str1);
+		System.out.println(str1);
+		changeString(str3);
+		System.out.println(str3);
+		
+		Integer i = Integer.valueOf(100);
+		changeInteger(i);
+		System.out.println(i);
 	}
 	
+	public static void changeString(String str) {
+		str = "changed";
+	}
+	public static void changeInteger(Integer i) {
+		i = Integer.valueOf(1);
+	}
 	public void test1() {
 		System.out.println("t1");
 	}
