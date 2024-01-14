@@ -43,40 +43,4 @@ public class ListTest {
 			l.add("az");
 		}
 	}
-	private static void testSubList() {
-		List<String> liste = new ArrayList<String>();
-	    liste.add("1");
-	    liste.add("2");
-	    liste.add("3");
-	    liste.add("4");
-	    liste.add("5");
-	    
-	    List<String> sousListe = liste.subList(1, 4);
-	    
-	    for(String s : sousListe) {
-	    	System.out.println("sousListe s="+s);
-	    }
-	    System.out.println("");
-	   
-	    sousListe.remove(1);
-	    for(String s : liste) {
-	    	System.out.println("liste s="+s);
-	    }
-	    System.out.println("");
-	   
-	    for(String s : sousListe) {
-	    	System.out.println("sousListe s="+s);
-	    }
-	    System.out.println("");
-	    liste.remove(1);
-	    for(String s : liste) {
-	    	System.out.println("liste s="+s);
-	    }
-	    System.out.println("");
-	   
-	    for(String s : sousListe) {
-	    	System.out.println("sousListe s="+s);
-	    }
-	    System.out.println("");
-	}
 }

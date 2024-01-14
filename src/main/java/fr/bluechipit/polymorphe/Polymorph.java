@@ -23,7 +23,8 @@ class Derived extends Polymorph {
 class Test2 {
 	public static void main(String args[]) {
 		Polymorph obj = new Derived();
-		obj.display();
+		Polymorph.display();
+		Derived.display();
 		obj.print();
 	}
 }

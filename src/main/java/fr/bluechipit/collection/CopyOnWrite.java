@@ -32,14 +32,6 @@ public class CopyOnWrite {
 		thread2.join();
 		thread3.join();
 		numbers.stream().forEach(System.out::println);
-		/*
-		Integer[] tab = new Integer[] {1,2,3};
-		List<Object> l = Arrays.asList(tab);
-		Iterator<Object> it = l.iterator();
-		l.add(4);
-		List<Object> res = new LinkedList<>();
-		it.forEachRemaining(res::add);
-		assertThat(res).containsOnly(1, 2, 3);*/
 	}
 	
 	private class RunnableWithCopy implements Runnable{
