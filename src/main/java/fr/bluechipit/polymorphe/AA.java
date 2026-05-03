@@ -24,7 +24,7 @@ class BB extends AA {
 		return -i;
 	}
 	static String g() {
-		return ("B");
+		return "B";
 	}
 	String h() {
 		return g();

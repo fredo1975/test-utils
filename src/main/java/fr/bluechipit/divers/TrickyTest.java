@@ -11,9 +11,9 @@ public class TrickyTest {
 		nums[1]=1;
 		nums[2]=2;
 		int res = removeDuplicates(nums);
-		System.out.println(res);
+		System.out.println("res="+res);
 		for(int i=0;i<nums.length;i++) {
-			System.out.println(nums[i]);
+			System.out.println("nums[i]="+nums[i]);
 		}
 	}
 	public static void method(Object o) {

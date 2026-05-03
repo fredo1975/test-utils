@@ -1,7 +1,6 @@
 package fr.bluechipit.algo;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -11,9 +10,12 @@ import java.util.stream.Stream;
 public class Exo1 {
     public static void main(String[] args) {
         Exo1 exo1 = new Exo1();
+        /*
         exo1.exo1();
         exo1.exo2();
         exo1.exo3();
+        exo1.exo4();*/
+        exo1.exo5();
 
     }
     /**
@@ -26,7 +28,7 @@ public class Exo1 {
                 .collect(Collectors.groupingBy(c -> c, Collectors.counting()))
                 .entrySet().stream()
                 .filter(e -> e.getValue() > 1)
-                .map(e -> e.getKey())
+                .map(Map.Entry::getKey)
                 .collect(Collectors.toList());
         System.out.println(result);
     }
@@ -58,5 +60,35 @@ public class Exo1 {
                 .sorted()
                 .collect(Collectors.toList());
         System.out.println(result);
+    }
+
+    /**
+     * Find the longest string in a list of strings using Java streams
+     */
+    public void exo4(){
+        List<String> strings = Arrays
+                .asList("apple", "banana", "cherry", "date", "grapefruit");
+        Optional<String> longestString = strings.stream().max(Comparator.comparingInt(String::length));
+        longestString.ifPresent(System.out::println);
+    }
+
+    /**
+     * write a programm to detect a palindrome
+     */
+    public void exo5(){
+        String str = "abccba";
+        List<Character> l = str.chars().mapToObj(i -> (char)i).collect(Collectors.toList());
+        int left=0;
+        int right = str.length()-1;
+        boolean res = true;
+        while(left<right){
+            if(!l.get(left).equals(l.get(right))){
+                res = false;
+                break;
+            }
+            left++;
+            right--;
+        }
+        System.out.println(res);
     }
 }

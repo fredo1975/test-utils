@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ClosestNumbers {
 	static int distClosestNumbers(int[] numbers) {
-        int min=99;
+        int min=Integer.MAX_VALUE;
         Arrays.sort(numbers);
         for(int i=1;i<numbers.length;i++){
             int diff = numbers[i-1]-numbers[i];

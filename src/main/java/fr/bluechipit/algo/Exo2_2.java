@@ -57,5 +57,9 @@ public class Exo2_2 {
 	public static void main(String[] args) {
 		String resultat = calc(325);
 		System.out.println(resultat);
+		int i= 5;
+		int j= 2;
+		int k = i/j;
+		System.out.println(k);
 	}
 }

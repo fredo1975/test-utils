@@ -19,9 +19,7 @@ public class SetTest {
 		System.out.println("headSet="+set1.headSet("titi").toString());
 		System.out.println("tailSet="+set1.tailSet("querty").toString());
 		
-		for(String s : set1){
-			System.out.println(s);
-		}
+		set1.forEach(System.out::println);
 		
 	}
 
